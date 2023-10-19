@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import shaka from 'shaka-player';
+	import { onMount } from 'svelte';
+
+	let videoElement: any = null;
+
+	onMount(() => {
+		const player = new shaka.Player(videoElement);
+		player.load(
+			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+		);
+	});
+</script>
+
+<video bind:this={videoElement} width="640" controls />
