@@ -36,11 +36,13 @@
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"vite": "^4.4.2",
+		"vite-plugin-iso-import": "^1.0.0",
 		"vitest": "^0.32.2"
 	},
 	"type": "module",
 	"dependencies": {
 		"shaka-player": "4.3.4",
-		"theme-change": "^2.5.0"
+		"theme-change": "^2.5.0",
+		"youtubei.js": "^6.4.1"
 	}
 }

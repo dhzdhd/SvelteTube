@@ -4,4 +4,6 @@
 </script>
 
 <Header />
-<slot />
+<main class="h-full pt-12">
+	<slot />
+</main>
