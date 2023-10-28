@@ -10,8 +10,13 @@
 	<div class="flex-1">
 		<a href="/" class="text-xl normal-case btn btn-sm btn-ghost">YouTube</a>
 	</div>
-	<div class="form-control">
-		<input type="text" placeholder="Search" class="w-24 input input-sm input-bordered md:w-auto" />
+	<div class=" join">
+		<input
+			type="text"
+			placeholder="Search"
+			class="w-24 input input-sm join-item input-bordered md:w-auto"
+		/>
+		<button class="rounded-r-xl btn btn-sm btn-primary join-item">GO</button>
 	</div>
 	<div class="dropdown dropdown-end">
 		<label tabindex="0" class="btn btn-sm btn-ghost btn-circle avatar">
@@ -34,12 +39,7 @@
 
 <style lang="postcss">
 	.navbar {
-		@apply max-h-[2.5rem];
-		@apply min-h-[2.5rem];
-		@apply grid;
-		@apply py-0;
-		@apply px-2;
-		@apply grid-cols-3;
+		@apply min-h-[3.5rem] grid py-0 px-2 grid-cols-3;
 	}
 
 	.input {
@@ -47,6 +47,6 @@
 	}
 
 	.dropdown {
-		@apply place-self-end;
+		@apply place-self-end self-center;
 	}
 </style>

@@ -102,6 +102,6 @@
 	});
 </script>
 
-<video class="w-full h-96" bind:this={videoElement} controls>
+<video class="w-full max-h-[90%] aspect-video" bind:this={videoElement} controls>
 	<track kind="captions" label="English" />
 </video>
