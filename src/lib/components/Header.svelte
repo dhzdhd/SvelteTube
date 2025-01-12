@@ -1,9 +1,4 @@
 <script>
-	const navLinks = [
-		{ name: 'Home', href: '/' },
-		{ name: 'About', href: '/about' },
-		{ name: 'Contact', href: '/contact' }
-	];
 </script>
 
 <header class="fixed navbar bg-base-300">
